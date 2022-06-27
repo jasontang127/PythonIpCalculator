@@ -36,7 +36,7 @@ def ipCalculator(ip, subnet):
         finalStr += str(finalNum) + ".";
         maxAddresses += 255 - int(subnetList[x]);
     maxAddresses += 1;
-    finalStr = finalStr[:-1] + "Number of usable Hosts: " + str(maxAddresses - 2);
+    finalStr = finalStr[:-1] + "\nNumber of usable Hosts: " + str(maxAddresses - 2);
     
     print(finalStr);
 
