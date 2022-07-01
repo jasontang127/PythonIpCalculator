@@ -6,5 +6,5 @@ It makes use of Python's bitwise operators which automatically convert decimal p
 
 Usage steps:
 - Download a version of Python
-- Using Command Prompt, naviagte to the file's location and type: python IpCalculator.py
+- Using Command Prompt, navigate to the file's location and type: python IpCalculator.py
 - Input an IP address and subnet mask (in the form of 4 numbers between 0-255, separated by periods {e.g. 182.90.2.5 and 255.255.255.0})
