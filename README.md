@@ -2,7 +2,8 @@
 
 This is a basic Network IP Calculator written in Python that returns the Network IP given an IP address and subnet mask.
 
-It makes use of Python's bitwise operators which automatically convert decimal portions of the IP address and subnet mask into binary, performs the AND operation on each individual bit, and then converts back from binary to decimal. The process is explained in this video: https://www.youtube.com/watch?v=Upk5MU7vGAg&list=PL6gx4Cwl9DGBpuvPW0aHa7mKdn_k9SPKO&index=27
+It makes use of Python's bitwise operators which automatically convert decimal portions of the IP address and subnet mask into binary, performs the AND operation on each individual bit, and then converts back from binary to decimal.
+The subnet mask is made up of four bytes and split into two parts; the first portion is made up of all 1's, while the second portion is made up of all 0's. When performing the AND operation with an IP address and the subnet mask, the first portion of bits is designated for the network IP. For example, using 182.90.2.5 and 255.255.255.0, the network IP is the same as the IP address wherever the subnet mask's bits are 1. In this case, the subnet mask's bits are 1 for the first three bytes, resulting in a network IP of 182.90.2.0. With 1 byte remaining, this means the network of IP 182.90.2.0 can host 253 IP addresses. 2 are reserved for the network IP itself and the special broadcast IP.
 
 Usage steps:
 - Download a version of Python
